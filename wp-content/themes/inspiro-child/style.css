@@ -1,13 +1,11 @@
 /* 
 Theme Name:    inspiro child
 Template:    inspiro
-Version:      1.0.04
+Version:      1.0.05
 Description:  Inspiro Child Theme
 Author:      Mathilde Eriksen
 */
 
-.site-info .copyright span:nth-child(1) {
-  flex: 0 0 50%;
-  text-align: left;
+.site-info {
   display: none;
 }
