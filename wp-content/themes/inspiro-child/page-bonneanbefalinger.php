@@ -124,8 +124,9 @@ get_header();
           })
       }
 
-      function visDetaljer (hvad) {
+     /* function visDetaljer (hvad) {
         location.href = `page-boenne-detalje.php?id=${hvad._id}`;}
+        */
 
     </script>
 
