@@ -52,7 +52,7 @@ get_header();
 
       let filter = "alle";
       const filterknapper = document.querySelectorAll("button");
-      let projekter;
+      let anbefalinger;
     
 
       document.addEventListener("DOMContentLoaded", start);
@@ -107,10 +107,10 @@ get_header();
 
       function vis() {
         console.log("vis");
-        console.log(projekter);
+        console.log(anbefalinger);
         container.textContent = "";
 
-        projekter.forEach((projekt) => {
+        anbefalinger.forEach((anbefaling) => {
           const klon = temp.cloneNode(true).content;
 
           //FILTRERING
