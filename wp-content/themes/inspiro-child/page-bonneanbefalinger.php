@@ -72,7 +72,7 @@ get_header();
       }
 
       async function hentData() {
-        // console.log("hentData");
+        console.log("hentData");
         const respons = await fetch(url);
         const catData = await fetch(catUrl);
         anbefalinger = await respons.json();
@@ -105,6 +105,7 @@ get_header();
            vis();
       }
 
+      
       function vis() {
         console.log("vis");
         console.log(anbefalinger);
@@ -115,18 +116,18 @@ get_header();
 
           //FILTRERING
           if (filterAnbefaling == "alle" || anbefaling.categories.includes(parseInt(filterAnbefaling))) {
-            klon.querySelector(".tekst").textContent =anbefaling.tekst;
-            klon.querySelector("h2").textContent =anbefaling.title.rendered;
-            klon.querySelector("img").src = anbefaling.billede.guid;
+            klon.querySelector(".tekst").textContent = anbefaling.tekst;
+            klon.querySelector("h2").textContent = anbefaling.title.rendered;
+           // klon.querySelector("img").src = anbefaling.billede.guid;
             klon.querySelector("article").addEventListener("click", () => {location.href = anbefaling.link; })
             container.appendChild(klon);
                }
           })
       }
 
-     /* function visDetaljer (hvad) {
+     function visDetaljer (hvad) {
         location.href = `page-boenne-detalje.php?id=${hvad._id}`;}
-        */
+        
 
     </script>
 
