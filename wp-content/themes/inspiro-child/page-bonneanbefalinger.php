@@ -118,7 +118,7 @@ get_header();
           if (filterAnbefaling == "alle" || anbefaling.categories.includes(parseInt(filterAnbefaling))) {
             klon.querySelector(".tekst").textContent = anbefaling.tekst;
             klon.querySelector("h2").textContent = anbefaling.title.rendered;
-           // klon.querySelector("img").src = anbefaling.billede.guid;
+            klon.querySelector("img").src = anbefaling.billede.guid;
             klon.querySelector("article").addEventListener("click", () => {location.href = anbefaling.link; })
             container.appendChild(klon);
                }
@@ -126,7 +126,7 @@ get_header();
       }
 
      function visDetaljer (hvad) {
-        location.href = `page-boenne-detalje.php?id=${hvad._id}`;}
+        location.href = `page-bonne-detalje.php?id=${hvad._id}`;}
         
 
     </script>
