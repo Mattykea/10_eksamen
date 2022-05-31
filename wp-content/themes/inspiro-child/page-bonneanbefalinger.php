@@ -17,7 +17,19 @@
 
 get_header(); 
 ?>
+  <section class="section1">
+    <div class="col1">
+      <h2>Filterkaffe</h2>
+      <img class="filterbil" src="" alt="">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt odio neque officiis vitae corrupti nemo delectus eligendi esse illum incidunt maxime nihil sit sint, nostrum consequatur? Iusto dolor corporis autem libero odit consequatur, eligendi iure at consectetur accusamus, omnis ullam ea? Eligendi soluta praesentium ea corrupti labore quos. Ullam, error?</p>
+    </div>
 
+    <div class="col2">
+      <h2>Espresso</h2>
+      <img class="espressobil" src="" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus dolor impedit aliquid et illo doloribus alias, exercitationem voluptatum esse assumenda architecto in deleniti quis autem aut, illum non. Cum alias reiciendis nobis hic eaque excepturi blanditiis, corporis unde fugiat repudiandae dicta esse voluptate illo quae voluptatum, quaerat dolores dolorem libero?</p>
+    </div>
+  </section>
    <template>
       <article class="styleanbefalinger">
         <img src="" alt="" />
@@ -119,14 +131,14 @@ get_header();
             klon.querySelector(".tekst").textContent = anbefaling.tekst;
             klon.querySelector("h2").textContent = anbefaling.title.rendered;
             klon.querySelector("img").src = anbefaling.billede.guid;
+            console.log("Hej " + anbefaling.link)
             klon.querySelector("article").addEventListener("click", () => {location.href = anbefaling.link; })
             container.appendChild(klon);
                }
           })
       }
 
-     function visDetaljer (hvad) {
-        location.href = `page-bonne-detalje.php?id=${hvad._id}`;}
+     
        
     </script>
 

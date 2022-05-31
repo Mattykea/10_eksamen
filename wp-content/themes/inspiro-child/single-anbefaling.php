@@ -12,7 +12,7 @@
  * @package Inspiro
  * @subpackage Inspiro_Lite
  * @since Inspiro 1.0.0
- * @version 1.0.0
+ * @version 1.0.1
  */
 
 get_header(); 
@@ -25,8 +25,10 @@ get_header();
             <template>
                 <article class="styledetalje">
                     <img src="" alt="" />
-                    <h2></h2>
-                    <p class="tekst"></p>
+                    <div class="right_col">
+                      <h2></h2>
+                      <p class="tekst"></p>
+                    </div>
                 </article>
             </template>
 
@@ -45,7 +47,7 @@ get_header();
 
       let filter = "alle";
       const filterknapper = document.querySelectorAll("button");
-      let anbefalinger;
+      let anbefaling;
     
 
       document.addEventListener("DOMContentLoaded", start);
@@ -67,26 +69,22 @@ get_header();
       async function hentData() {
         console.log("hentData");
         const respons = await fetch(url);
-        anbefalinger = await respons.json();
+        anbefaling = await respons.json();
         vis();
       }
       
       function vis() {
         console.log("vis");
-        console.log(anbefalinger);
+        console.log(anbefaling);
         container.textContent = "";
 
-        anbefalinger.forEach((kategori) => {
           const klon = temp.cloneNode(true).content;
 
-          //FILTRERING
-          if (filterAnbefaling == "alle" || anbefaling.categories.includes(parseInt(filterAnbefaling))) {
-            klon.querySelector(".tekst").textContent = anbefaling.tekst;
+         klon.querySelector(".tekst").textContent = anbefaling.tekst;
             klon.querySelector("h2").textContent = anbefaling.title.rendered;
             klon.querySelector("img").src = anbefaling.billede.guid;
             container.appendChild(klon);
-               }
-          });
+      
       }
 
      hentData();
