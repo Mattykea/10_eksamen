@@ -1,13 +1,33 @@
-body {
-  color: blue;
-}
-
+/* Fjern "made with wordpress" fra footer */
 .site-info {
   display: none;
 }
 
+/* Bonneanbefalinger */
+.section1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2%;
+  margin-bottom: 5%;
+}
+
+.section1 h2 {
+  margin: 0;
+}
+
+.anbefalingcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 5%;
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+/* Singleview */
 .styledetalje {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2%;
+  margin: 4%;
+  margin-inline: 8%;
 }

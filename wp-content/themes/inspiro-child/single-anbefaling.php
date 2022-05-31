@@ -24,7 +24,10 @@ get_header();
 
             <template>
                 <article class="styledetalje">
-                    <img src="" alt="" />
+                    <div class="left_col"> 
+                      <img src="" alt="" />
+                    </div>
+                   
                     <div class="right_col">
                       <h2></h2>
                       <p class="tekst"></p>
