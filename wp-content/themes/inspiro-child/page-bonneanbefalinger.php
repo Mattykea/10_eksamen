@@ -21,24 +21,24 @@ get_header();
                    
 		  <main id="main" class="site-main">	
         <h1>Bønneanbefalinger</h1>
-          <section class="section1">
-            <div class="col1">
-              <h2>Filterkaffe</h2>
-              <img class="filterbil" src="" alt="">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt odio neque officiis vitae corrupti nemo delectus eligendi esse illum incidunt maxime nihil sit sint, nostrum consequatur? Iusto dolor corporis autem libero odit consequatur, eligendi iure at consectetur accusamus, omnis ullam ea? Eligendi soluta praesentium ea corrupti labore quos. Ullam, error?</p>
-            </div>
+        <section class="section1">
+          <div class="col1">
+            <h2>Filterkaffe</h2>
+            <img class="filterbil" src="" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt odio neque officiis vitae corrupti nemo delectus eligendi esse illum incidunt maxime nihil sit sint, nostrum consequatur? Iusto dolor corporis autem libero odit consequatur, eligendi iure at consectetur accusamus, omnis ullam ea? Eligendi soluta praesentium ea corrupti labore quos. Ullam, error?</p>
+          </div>
 
-            <div class="col2">
-              <h2>Espresso</h2>
-              <img class="espressobil" src="" alt="">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus dolor impedit aliquid et illo doloribus alias, exercitationem voluptatum esse assumenda architecto in deleniti quis autem aut, illum non. Cum alias reiciendis nobis hic eaque excepturi blanditiis, corporis unde fugiat repudiandae dicta esse voluptate illo quae voluptatum, quaerat dolores dolorem libero?</p>
-            </div>   
-          </section>
+          <div class="col2">
+            <h2>Espresso</h2>
+            <img class="espressobil" src="" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus dolor impedit aliquid et illo doloribus alias, exercitationem voluptatum esse assumenda architecto in deleniti quis autem aut, illum non. Cum alias reiciendis nobis hic eaque excepturi blanditiis, corporis unde fugiat repudiandae dicta esse voluptate illo quae voluptatum, quaerat dolores dolorem libero?</p>
+          </div>   
+        </section>
 
-          <nav id="filtrering"></nav>
+        <nav id="filtrering"></nav>
 
-          <!-- Der vores json/pods indhold ligger -->
-          <section class="anbefalingcontainer"></section>
+        <!-- Der vores json/pods indhold ligger -->
+        <section class="anbefalingcontainer"></section>
       </main><!-- #main -->
 
       <template>

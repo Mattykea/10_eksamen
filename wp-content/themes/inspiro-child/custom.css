@@ -23,6 +23,27 @@
   margin-top: 5%;
 }
 
+/* Style på KNAPPER */
+#filtrering button {
+  color: white;
+  background-color: #d1d6ce;
+  border-radius: 5%;
+  gap: 10px;
+  font-weight: bold;
+  border-color: #d1d6ce;
+  border: 5px solid;
+}
+
+#filtrering button:hover {
+  background-color: white;
+  color: #d1d6ce;
+  border-radius: 5%;
+  gap: 10px;
+  font-weight: bold;
+  border-color: #d1d6ce;
+  border: 5px solid;
+}
+
 /* Singleview */
 .styledetalje {
   display: grid;
