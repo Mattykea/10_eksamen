@@ -131,9 +131,8 @@ get_header();
 
           //FILTRERING
           if (filterAnbefaling == "alle" || anbefaling.categories.includes(parseInt(filterAnbefaling))) {
-            klon.querySelector(".tekst").textContent = anbefaling.tekst;
-            klon.querySelector("h2").textContent = anbefaling.title.rendered;
             klon.querySelector("img").src = anbefaling.billede.guid;
+            klon.querySelector("h2").textContent = anbefaling.title.rendered;
             console.log("Hej " + anbefaling.link)
             klon.querySelector("article").addEventListener("click", () => {location.href = anbefaling.link; })
             container.appendChild(klon);

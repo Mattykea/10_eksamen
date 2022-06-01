@@ -3,11 +3,38 @@
   display: none;
 }
 
-/* Bonneanbefalinger */
+h1,
+.section1,
+#filtrering,
+.anbefalingcontainer {
+  margin-inline: 2%;
+}
+
+/* Skrifttyper */
+@font-face {
+  font-family: "syne";
+  src: url(Syne/Syne-VariableFont_wght.ttf) format(ttf);
+
+  font-family: "cormorant garamond";
+  src: url(Cormorant_Garamond/CormorantGaramond-Regular.ttf) format(ttf);
+}
+
+h1,
+h2 {
+  font-family: "Syne", sans-serif;
+  font-weight: 600;
+}
+
+p {
+  font-family: "cormorant garamond", serif;
+  font-weight: 500;
+}
+
+/* Bønneanbefalinger */
 .section1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2%;
+  gap: 20%;
   margin-bottom: 5%;
 }
 
@@ -15,10 +42,19 @@
   margin: 0;
 }
 
+/* Streg under h2 */
+.section1 h2::after {
+  content: "";
+  display: block;
+  background-color: #a5aca0;
+  width: 300px;
+  height: 1.5px;
+}
+
 .anbefalingcontainer {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 5%;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 8%;
   cursor: pointer;
   margin-top: 5%;
 }
@@ -27,21 +63,21 @@
 #filtrering button {
   color: white;
   background-color: #d1d6ce;
-  border-radius: 5%;
+  border-radius: 2rem;
   gap: 10px;
   font-weight: bold;
   border-color: #d1d6ce;
-  border: 5px solid;
+  border: 4px solid;
 }
 
 #filtrering button:hover {
   background-color: white;
   color: #d1d6ce;
-  border-radius: 5%;
+  border-radius: 2rem;
   gap: 10px;
   font-weight: bold;
   border-color: #d1d6ce;
-  border: 5px solid;
+  border: 4px solid;
 }
 
 /* Singleview */
