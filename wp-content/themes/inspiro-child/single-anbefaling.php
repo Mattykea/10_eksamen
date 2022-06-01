@@ -17,26 +17,28 @@
 
 get_header(); 
 ?>
-
-	<div id="primary" class="content-area">
-
-        <main id="main" class="site-main">	
-
-            <template>
+              <template>
                 <article class="styledetalje">
-                    <div class="left_col"> 
+
+                   <div class="left_col">
                       <img src="" alt="" />
-                    </div>
-                   
-                    <div class="right_col">
+                   </div> 
+
+                   <div class="right_col"> 
                       <h2></h2>
                       <p class="tekst"></p>
-                    </div>
-                </article>
-            </template>
+                    </div> 
 
-    
-            <section class="anbefalingcontainer"></section>
+                    <div class="firkant"></div>
+
+                    
+                </article>
+              </template>
+            
+	<div id="primary" class="content-area">
+
+        <main id="main" class="site-main">
+          <section id="detalje-test" class="anbefalingcontainer"> </section>
         </main><!-- #main -->
 
 <script>
