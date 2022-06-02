@@ -17,29 +17,28 @@
 
 get_header(); 
 ?>
-              <template>
-                <article class="styledetalje">
+  <template>
+    <article class="styledetalje">
+     
+        <img class="left_col" src="" alt="" />
 
-                   <div class="left_col">
-                      <img src="" alt="" />
-                   </div> 
+      <div class="right_col"> 
+        <h2></h2>
+        <p class="tekst"></p>
+      </div> 
 
-                   <div class="right_col"> 
-                      <h2></h2>
-                      <p class="tekst"></p>
-                    </div> 
-
-                    <div class="firkant"></div>
-
+      <div class="firkant"></div>
                     
-                </article>
-              </template>
+    </article>
+  </template>
             
 	<div id="primary" class="content-area">
 
-        <main id="main" class="site-main">
-          <section id="detalje-test" class="anbefalingcontainer"> </section>
-        </main><!-- #main -->
+    <main id="main" class="site-main site-container">
+      <section id="firkant"></section>
+      <section id="detalje-test" class="anbefalingcontainer"> </section>
+      <section class="kaffe_ikon"></section>
+    </main><!-- #main -->
 
 <script>
        console.log("nu starter script");
