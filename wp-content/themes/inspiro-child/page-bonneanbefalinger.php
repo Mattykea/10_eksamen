@@ -27,7 +27,7 @@ get_header();
           <div class="col1">
             <h2>Filterkaffe</h2>
             <img class="filterbil" src="" alt="">
-            <p>Filterkaffen er den slags kaffe, du brygger på din kaffemaskine. i maskinen drysser du din kaffe i filteret, hvor vandet løber igennem for at brygge den perfekte kop kærlighed. Her ender du med en traditionel sort kaffe, hvor der kan tilføjes mælk eller sukker. Hvis du kunne tænke dig at prøve filterkaffe så tryk på knappen nedenfor</p>          </div>
+            <p>Filterkaffen er den slags kaffe, du brygger på din kaffemaskine. I maskinen drysser du din kaffe i filteret, hvor vandet løber igennem for at brygge den perfekte kop kærlighed. Her ender du med en traditionel sort kaffe, hvor der kan tilføjes mælk eller sukker. Hvis du kunne tænke dig at prøve filterkaffe så tryk på knappen nedenfor.</p>          </div>
 
           <div class="col2">
             <h2>Espresso</h2>
