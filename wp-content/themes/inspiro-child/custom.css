@@ -115,25 +115,26 @@ p {
 
 #firkant {
   background-color: #a5aca0;
-  width: 45rem;
+  width: auto;
   height: 30rem;
   position: absolute;
   right: 0;
-  top: 0;
+  left: 23%;
+  top: 5%;
 }
 
 /* Billede af posen */
 .left_col {
   position: absolute;
   left: 5%;
-  top: 5%;
+  top: 10%;
   width: 28%;
 }
 
 /* Teksten */
 .right_col {
   position: absolute;
-  top: 8%;
+  top: 12%;
   left: 42%;
   width: 40%;
 }
@@ -147,14 +148,14 @@ p {
   background-image: url(kaffekopsingleview.png);
   background-size: cover;
   width: 10%;
-  top: 3%;
+  top: 10%;
   right: 5%;
   aspect-ratio: 114/128;
   position: absolute;
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   h1,
   .section1,
   #filtrering,
@@ -171,5 +172,42 @@ p {
   .section1 {
     gap: 8%;
     margin-bottom: 18%;
+  }
+
+  /* Singleview */
+  .site-container {
+    position: relative;
+    padding-bottom: 150%;
+    margin-top: 5%;
+  }
+
+  #firkant {
+    width: auto;
+    height: auto;
+    right: 7%;
+    left: 7%;
+    top: 15%;
+    bottom: 10%;
+  }
+
+  /* Billede af posen */
+  .left_col {
+    left: 20%;
+    right: 20%;
+    top: 0%;
+    width: 60%;
+  }
+
+  /* Teksten */
+  .right_col {
+    top: 52%;
+    left: 15%;
+    width: 70%;
+  }
+
+  .kaffe_ikon {
+    width: 12%;
+    top: 50%;
+    right: 17%;
   }
 }
