@@ -20,19 +20,22 @@ get_header();
 	  <div id="primary" class="content-area">
                    
 		  <main id="main" class="site-main">	
-        <h1>Bønneanbefalinger</h1>
+        <h1 class="bonne_h1">BØNNEANBEFALINGER</h1>
+        <p class="bonne_p">True Intent Coffee hjælper dig til at finde de bedste kaffebønner, der passer bedst til dine kaffebehov. Vi har bønner med en rund chokolade aroma og bønner med et citrus finish så der er noget til enhver smag.</p>
 
         <section class="section1">
 
           <div class="col1">
             <h2>Filterkaffe</h2>
             <img class="filterbil" src="" alt="">
-            <p>Filterkaffen er den slags kaffe, du brygger på din kaffemaskine. I maskinen drysser du din kaffe i filteret, hvor vandet løber igennem for at brygge den perfekte kop kærlighed. Her ender du med en traditionel sort kaffe, hvor der kan tilføjes mælk eller sukker. Hvis du kunne tænke dig at prøve filterkaffe så tryk på knappen nedenfor.</p>          </div>
+            <p>Filterkaffen er den slags kaffe, du brygger på din kaffemaskine. I maskinen drysser du din kaffe i filteret, hvor vandet løber igennem for at brygge den perfekte kop kærlighed. Her ender du med en traditionel sort kaffe, hvor der kan tilføjes mælk eller sukker. Hvis du kunne tænke dig at prøve filterkaffe så tryk på knappen nedenfor.</p>          
+          </div>
 
           <div class="col2">
             <h2>Espresso</h2>
             <img class="espressobil" src="" alt="">
-            <p>Espresso refererer til en bryggemetode, så espresso er en specifik måde at lave kaffe på. Espresso er er brygget under intenst tryk og er en lille og koncentreret kop kaffe. Hvis du leder efter de perfekte bønner, at brygge espresso på så tryk på knappen nedenfor</p>          </div>   
+            <p>Espresso refererer til en bryggemetode, så espresso er en specifik måde at lave kaffe på. Espresso er brygget under intenst tryk og er en lille og koncentreret kop kaffe. Hvis du leder efter de perfekte bønner, at brygge espresso på så tryk på knappen nedenfor.</p>          
+          </div>   
         </section>
 
         <nav id="filtrering"></nav>
@@ -140,8 +143,6 @@ get_header();
                }
           })
       }
-
-     
        
     </script>
 

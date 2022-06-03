@@ -4,10 +4,37 @@
 }
 
 h1,
+p,
 .section1,
 #filtrering,
 .anbefalingcontainer {
   margin-inline: 5%;
+}
+
+.section1 p,
+.section1 h2 {
+  margin: 0;
+  text-align: left;
+}
+
+.elementor-12
+  .elementor-element.elementor-element-bd3b88e
+  .elementor-heading-title {
+  text-align: left;
+}
+
+.site-main h1 {
+  margin-bottom: 2%;
+}
+
+.site-main p {
+  margin-bottom: 5%;
+}
+
+element,
+.page .entry-title,
+.page-title {
+  font-size: 2.25rem;
 }
 
 /* Skrifttyper */
@@ -22,17 +49,108 @@ h1,
   src: url(PT_Mono/PTMono-Regular.ttf) format(ttf);
 }
 
+/* Skrifttyper */
 h1,
-h2 {
-  font-family: "Syne", sans-serif;
-  font-weight: 600;
+h2,
+h2 .page .entry-title,
+.page-title {
+  font-family: "syne", sans-serif;
+  font-weight: 700;
 
   margin-block: 5%;
+  color: #464542;
+}
+
+.page .entry-title,
+.page-title {
+  font-weight: 600;
+}
+
+element,
+.page .entry-title,
+.page-title {
+  color: #464542;
+  font-family: "syne", sans-serif;
 }
 
 p {
   font-family: "pt mono", serif;
   font-weight: 400;
+}
+
+/* Bryggeguides */
+.elementor-column-gap-default
+  > .elementor-column
+  > .elementor-element-populated {
+  padding: 20px;
+}
+
+body:not(.has-archive-description):not(.has-header-image) .page-title::after,
+body:not(.has-archive-description):not(.has-header-image).page
+  .entry-title::after {
+  display: none;
+}
+
+body:not(.page-layout-sidebar-right) #primary .entry-content,
+body:not(.page-layout-sidebar-right) #primary .entry-header .inner-wrap {
+  margin-bottom: 0;
+}
+
+/* Styling af header nav*/
+.has-header-image.home.blog .headroom--not-top .navbar,
+.has-header-image.inspiro-front-page .headroom--not-top .navbar,
+.has-header-video.home.blog .headroom--not-top .navbar,
+.has-header-video.inspiro-front-page .headroom--not-top .navbar,
+.navbar,
+.headroom--not-top .navbar {
+  background: #373634bb;
+  padding: 0;
+}
+/* Padding på Logo i nav */
+.custom-logo-link img {
+  padding: 5px;
+}
+
+.page .entry-title,
+.page-title {
+  margin-bottom: 0;
+}
+
+.navbar-nav > li.current-menu-item > a,
+.navbar-nav > li.current-menu-parent > a,
+.navbar-nav > li.current_page_item > a {
+  color: white;
+}
+
+/* Baggrundsfarve på hele siden */
+#content {
+  background-color: #e3e3e3;
+}
+
+/* Styling af nyhedsbrev: farve og font */
+.side-nav .search-form .search-submit,
+.side-nav .wp-block-search__button,
+.site-footer .search-form .search-submit,
+.site-footer .wp-block-search__button {
+  font-family: "tp mono", sans-serif;
+  color: #faf9f6;
+  border: 2px solid #faf9f6;
+}
+
+.side-nav .search-form .search-submit,
+.side-nav .wp-block-search__button,
+.site-footer .search-form .search-submit,
+.site-footer .wp-block-search__button:hover {
+  background-color: #faf9f6;
+  color: #464542;
+  border-color: #faf9f6;
+}
+
+.search-form button,
+.search-form input,
+.wp-block-search button,
+.wp-block-search input {
+  border: 2px solid #faf9f6;
 }
 
 /* Bønneanbefalinger */
@@ -45,6 +163,17 @@ p {
 
 .section1 h2 {
   margin: 0;
+}
+
+.bonne_p,
+.bonne_h1 {
+  text-align: center;
+}
+
+/* Footer Farver */
+.site-footer {
+  background: #464542;
+  color: #faf9f6;
 }
 
 /* Streg under h2 */
@@ -77,18 +206,19 @@ p {
 }
 
 /* Style på KNAPPER */
-#filtrering button {
+#filtrering button,
+.tilbage_knap button {
   color: white;
   background-color: #d1d6ce;
   border-radius: 2rem;
   font-weight: bold;
-  border-color: #d1d6ce;
-  border: 4px solid;
+  border: 4px solid #e3e3e3;
 }
 
-#filtrering button:hover {
-  background-color: white;
-  color: #d1d6ce;
+#filtrering button:hover,
+.tilbage_knap button:hover {
+  background-color: rgb(239, 239, 239);
+  color: #c3ccbe;
   border-radius: 2rem;
   font-weight: bold;
   border-color: #d1d6ce;
@@ -96,7 +226,7 @@ p {
 }
 
 #filtrering button:focus {
-  background-color: white;
+  background-color: rgb(239, 239, 239);
   color: #d1d6ce;
   border-radius: 2rem;
   font-weight: bold;
@@ -105,7 +235,6 @@ p {
 }
 
 /* Singleview */
-
 .site-container {
   margin-inline: 0;
   position: relative;
@@ -114,13 +243,14 @@ p {
 }
 
 #firkant {
-  background-color: #a5aca0;
+  background-color: #c4c4c4;
   width: auto;
-  height: 30rem;
+  height: auto;
   position: absolute;
   right: 0;
   left: 23%;
   top: 5%;
+  bottom: 10%;
 }
 
 /* Billede af posen */
@@ -154,9 +284,21 @@ p {
   position: absolute;
 }
 
+.tilbage_knap {
+  position: absolute;
+  left: 12%;
+  top: 71%;
+}
+
+.tilbage_knap button {
+  border-color: #d1d6ce;
+}
+
 /* Responsive */
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+  /* Bønneanbefalinger */
   h1,
+  p,
   .section1,
   #filtrering,
   .anbefalingcontainer {
@@ -166,7 +308,7 @@ p {
   #anbefaling-test {
     margin-top: 10%;
     margin-bottom: 170%;
-    gap: 3%;
+    gap: 8%;
   }
 
   .section1 {
@@ -179,6 +321,11 @@ p {
     position: relative;
     padding-bottom: 150%;
     margin-top: 5%;
+  }
+
+  .tilbage_knap {
+    left: 7%;
+    top: 0;
   }
 
   #firkant {
@@ -194,20 +341,95 @@ p {
   .left_col {
     left: 20%;
     right: 20%;
-    top: 0%;
+    top: 6%;
     width: 60%;
   }
 
   /* Teksten */
   .right_col {
-    top: 52%;
+    top: 59%;
+    left: 15%;
+    width: 70%;
+  }
+
+  .kaffe_ikon {
+    width: 10%;
+    top: 55%;
+    right: 17%;
+  }
+}
+
+@media (max-width: 750px) {
+  /* Singleview */
+  .site-container {
+    position: relative;
+    padding-bottom: 180%;
+    margin-top: 5%;
+  }
+
+  /* Teksten */
+  .right_col {
+    top: 51%;
+    left: 15%;
+    width: 70%;
+  }
+
+  .kaffe_ikon {
+    width: 10%;
+    top: 48.5%;
+    right: 17%;
+  }
+}
+
+@media (max-width: 585px) {
+  /* Bønneanbefalinger */
+  #anbefaling-test {
+    margin-bottom: 50%;
+  }
+
+  /* Singleview */
+  .site-container {
+    position: relative;
+    padding-bottom: 230%;
+    margin-top: 5%;
+  }
+
+  /* Teksten */
+  .right_col {
+    top: 44%;
     left: 15%;
     width: 70%;
   }
 
   .kaffe_ikon {
     width: 12%;
-    top: 50%;
+    top: 41.5%;
+    right: 17%;
+  }
+}
+
+@media (max-width: 400px) {
+  #anbefaling-test {
+    margin-bottom: 170%;
+  }
+
+  /* Singleview */
+  .site-container {
+    position: relative;
+    padding-bottom: 280%;
+    margin-top: 5%;
+  }
+
+  /* Teksten */
+  .right_col {
+    top: 37%;
+    left: 15%;
+    width: 70%;
+  }
+
+  .kaffe_ikon {
+    width: 12%;
+    top: 35.5%;
     right: 17%;
   }
 }

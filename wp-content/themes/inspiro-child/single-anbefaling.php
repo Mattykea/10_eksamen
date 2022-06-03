@@ -38,6 +38,9 @@ get_header();
       <section id="firkant"></section>
       <section id="detalje-test" class="anbefalingcontainer"> </section>
       <section class="kaffe_ikon"></section>
+      <a class="tilbage_knap" href="https://mathildese.dk/kea/10_eksamen/bonneanbefalinger/">
+        <button>Tilbage</button>
+      </a>
     </main><!-- #main -->
 
 <script>
