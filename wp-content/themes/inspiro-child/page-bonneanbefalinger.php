@@ -38,6 +38,7 @@ get_header();
           </div>   
         </section>
 
+        <!-- Her ender knapperne -->
         <nav id="filtrering"></nav>
 
         <!-- Der vores json/pods indhold ligger -->
@@ -104,7 +105,8 @@ get_header();
       function opretKnapper() {
 
         categories.forEach(cat =>{
-          document.querySelector("#filtrering").innerHTML += `<button class="filter" data-anbefaling="${cat.id}">${cat.name}</button>`
+          document.querySelector("#filtrering").innerHTML += 
+          `<button class="filter" data-anbefaling="${cat.id}">${cat.name}</button>`
         })
 
         addEventListenersToButtons();
@@ -123,7 +125,6 @@ get_header();
 
            vis();
       }
-
       
       function vis() {
         console.log("vis");

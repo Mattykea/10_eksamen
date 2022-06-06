@@ -157,7 +157,7 @@ body:not(.page-layout-sidebar-right) #primary .entry-header .inner-wrap {
 .section1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20%;
+  gap: 11%;
   margin-bottom: 5%;
 }
 
@@ -165,7 +165,6 @@ body:not(.page-layout-sidebar-right) #primary .entry-header .inner-wrap {
   margin: 0;
 }
 
-.bonne_p,
 .bonne_h1 {
   text-align: center;
 }
